@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f6f3;
+    color: #333333;
+    line-height: 1.7;
+}
+
+
+
+h1 {
+    font-size: 32px;
+    color: #6b405c;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 27px;
+    color: #70445f;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 21px;
+    color: #8a5877;
+}
+
+
+a {
+    color: #925d7c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #c17fa2;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid #925d7c;
+    outline-offset: 4px;
+}
+
+
+.site-header {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.section {
+    padding: 45px 0;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding: 60px 0;
+}
+
+.hero-text,
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.welcome {
+    color: #a16c8a;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.about-card,
+.content-card,
+.goals-card,
+.sidebar {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.hobbies-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    padding: 14px;
+    border: 1px solid #e5dce2;
+    text-align: left;
+}
+
+th {
+    background-color: #eadde5;
+    color: #603d53;
+}
+
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+.primary-button,
+.submit-button {
+    display: inline-block;
+    background-color: #925d7c;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.primary-button:hover,
+.submit-button:hover {
+    background-color: #70445f;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8cbd3;
+    border-radius: 7px;
+    font: inherit;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+.checkbox-group label {
+    margin: 0;
+}
+
+
+.site-footer {
+    background-color: #604254;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.site-footer a {
+    color: #f5dce9;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hobbies-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
